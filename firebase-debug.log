@@ -1,0 +1,74 @@
+[debug] [2020-07-13T10:53:46.807Z] ----------------------------------------------------------------------
+[debug] [2020-07-13T10:53:46.811Z] Command:       /home/mieone/.nvm/versions/node/v12.16.2/bin/node /home/mieone/.nvm/versions/node/v12.16.2/bin/firebase init
+[debug] [2020-07-13T10:53:46.811Z] CLI Version:   3.17.2
+[debug] [2020-07-13T10:53:46.811Z] Platform:      linux
+[debug] [2020-07-13T10:53:46.811Z] Node Version:  v12.16.2
+[debug] [2020-07-13T10:53:46.812Z] Time:          Mon Jul 13 2020 16:23:46 GMT+0530 (India Standard Time)
+[debug] [2020-07-13T10:53:46.812Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-07-13T10:53:46.916Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2020-07-13T10:53:46.916Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mieone/Downloads/fb-messenger-clone
+
+[warn] ⚠  You have not selected any features. Continuing will simply associate this folder with a Firebase project. Press Ctrl + C if you want to start over.
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-13T10:53:51.042Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-07-13T10:53:51.043Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ {
+  refresh_token: '1//0gfwOc7oFZhrDCgYIARAAGBASNwF-L9IrkISJ2UHC4qGufnVQ3OaNeThFQP4M_9pHoFZsTE7g9uPJmMeDNfH26mEXSTD81BKnE_g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid'
+} 
+ Mon Jul 13 2020 16:23:51 GMT+0530 (India Standard Time)
+[debug] [2020-07-13T10:53:51.542Z] <<< HTTP RESPONSE 200
+[debug] [2020-07-13T10:53:51.658Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Mon Jul 13 2020 16:23:51 GMT+0530 (India Standard Time)
+[debug] [2020-07-13T10:53:59.904Z] ----------------------------------------------------------------------
+[debug] [2020-07-13T10:53:59.906Z] Command:       /home/mieone/.nvm/versions/node/v12.16.2/bin/node /home/mieone/.nvm/versions/node/v12.16.2/bin/firebase init
+[debug] [2020-07-13T10:53:59.906Z] CLI Version:   3.17.2
+[debug] [2020-07-13T10:53:59.906Z] Platform:      linux
+[debug] [2020-07-13T10:53:59.906Z] Node Version:  v12.16.2
+[debug] [2020-07-13T10:53:59.907Z] Time:          Mon Jul 13 2020 16:23:59 GMT+0530 (India Standard Time)
+[debug] [2020-07-13T10:53:59.907Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-07-13T10:53:59.915Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2020-07-13T10:53:59.915Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/mieone/Downloads/fb-messenger-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-13T10:54:04.452Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Mon Jul 13 2020 16:24:04 GMT+0530 (India Standard Time)
