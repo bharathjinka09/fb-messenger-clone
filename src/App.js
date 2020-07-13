@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Button, FormControl, Input, InputLabel } from '@material-ui/core'
 import Message from './Message'
+import db from './firebase'
+import firebase from 'firebase'
 
 function App() {
 
@@ -11,13 +13,15 @@ function App() {
 
   // useState = variable in REACT
   // useEffect = run code on a specific condition (when data changes in db)
-
-  const sendMessage = (event) => {
-      // logic to send message
-      event.preventDefault()
-      setMessages([...messages, input]);
-      setInput('');
-  }
+  
+  useEffect(() =>{
+    // run once when the app component loads
+    db.collection('messages')
+    .orderBy('timestamp','desc')
+    .onSnapshot(snapshot => {
+      setMessages(snapshot.docs.map(doc => doc.data()))
+    })
+  },[])
 
   useEffect(() =>{
     // run code
@@ -26,9 +30,23 @@ function App() {
     // If we have a varaible like input inside [], it runs when input changes everytime 
   },[]) // condition dependencies
 
+  const sendMessage = (event) => {
+      // logic to send message
+      event.preventDefault();
+
+      db.collection('messages').add({
+        message: input,
+        username: username,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+      })
+      setInput('');
+  }
+
+
   return (
     <div className="App">
       <h1>FB Messenger Clone</h1>
+      <h2>Welcome {username}</h2>
       <form>
       <FormControl>
         <InputLabel>Enter a message...</InputLabel>
@@ -40,7 +58,7 @@ function App() {
 
       {
         messages.map(message => (
-            <Message text={message} />
+            <Message username={username} message={message} />
           ))
       }
 
